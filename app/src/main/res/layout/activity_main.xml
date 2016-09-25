@@ -1,20 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorBlanco"
-    tools:context="univalleapi.tutorial.com.univalleapi.MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorFondoBlanco"
+    android:padding="20dp"
+    tools:context="univalleapi.tutorial.com.univalleapi.MainActivity"
+    android:scrollbars="vertical">
 
-    <TextView
+    <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textColor="@color/colorNegro"
-        android:textSize="14sp" />
-</RelativeLayout>
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo1"
+                android:id="@+id/imgLogoIndex"
+                android:layout_marginTop="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                app:srcCompat="@drawable/index5"
+                android:id="@+id/imgIndex"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+
+            <Button
+                android:text="Conoce la universidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnInicio"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/colorPrincipal"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UnivalleApi</string>
+    <string name="bienvenida">Bienvenido a nuestra App</string>
 </resources>
