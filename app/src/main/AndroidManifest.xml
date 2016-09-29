@@ -17,6 +17,10 @@
 
             </intent-filter>
         </activity>
+
+        <activity android:name=".MenuOpciones">
+
+        </activity>
     </application>
 
 </manifest>
