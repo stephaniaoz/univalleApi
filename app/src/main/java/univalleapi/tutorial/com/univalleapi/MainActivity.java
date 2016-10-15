@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnInicioApi = (Button) findViewById(R.id.btnInicio);
+        btnInicioApi = (Button) findViewById(R.id.btn_inicio);
 
         btnInicioApi.setOnClickListener(new View.OnClickListener(){
 

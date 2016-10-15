@@ -2,6 +2,7 @@ package univalleapi.tutorial.com.univalleapi;
 
 import android.app.Activity;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TabHost;
@@ -25,7 +26,7 @@ public class MenuOpciones extends Activity{
 
     public void getPropiedadesTab(){
 
-        Resources res = getResources();
+        final Resources res = getResources();
 
         tabsContainer = (TabHost) findViewById(android.R.id.tabhost);
         tabsContainer.setup();
